@@ -1,0 +1,32 @@
+:root {
+  --fontHeading: 'Orbitron', sans-serif;
+  --fontPar: 'Poppins', sans-serif;
+  --bg: #191919;
+  --fontColor: #c6dad5;
+  --redColor: #9e2a18;
+  --greenColor: #4f9484;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(circle at bottom right, var(--bg), transparent 80%),
+    radial-gradient(circle at bottom left, var(--bg), transparent 80%),
+    radial-gradient(circle at top right, var(--greenColor), transparent 40%),
+    radial-gradient(circle at top left, var(--redColor), transparent 40%),
+    var(--bg);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

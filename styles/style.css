@@ -5,6 +5,10 @@
   --fontColor: #c6dad5;
   --redColor: #9e2a18;
   --greenColor: #4f9484;
+  --lightColor: #c9f4fc;
+  --yellowColor: #f2f1c8;
+  --yellowBold: rgb(255, 255, 143);
+  --grayColor: rgb(245, 245, 245);
 }
 
 html {

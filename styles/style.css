@@ -5,6 +5,7 @@
   --fontColor: #c6dad5;
   --redColor: #9e2a18;
   --greenColor: #4f9484;
+  --lightGreen: #43b69b;
   --lightColor: #c9f4fc;
   --yellowColor: #f2f1c8;
   --yellowBold: rgb(255, 255, 143);
@@ -24,8 +25,8 @@ body {
   background:
     radial-gradient(circle at bottom right, var(--bg), transparent 80%),
     radial-gradient(circle at bottom left, var(--bg), transparent 80%),
-    radial-gradient(circle at top right, var(--greenColor), transparent 40%),
-    radial-gradient(circle at top left, var(--redColor), transparent 40%),
+    radial-gradient(circle at top right, var(--greenColor), transparent 25%),
+    radial-gradient(circle at top left, var(--redColor), transparent 25%),
     var(--bg);
 }
 

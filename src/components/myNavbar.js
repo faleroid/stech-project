@@ -92,11 +92,11 @@ class MyNavbar extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <div class="navbar-wrapper">
         <ul>
-          <li class="nav-item"><a href="#">Tentang Kompetisi</a></li>
-          <li class="nav-item"><a href="#">Syarat Pendaftaran</a></li>
-          <li class="nav-item"><a href="#">Jadwal Kompetisi</a></li>
-          <li class="nav-item"><a href="#">Berita</a></li>
-          <li class="nav-item"><a href="#">FAQ</a></li>
+          <li class="nav-item"><a href="#about">Tentang Kompetisi</a></li>
+          <li class="nav-item"><a href="#theme">Tema Besar</a></li>
+          <li class="nav-item"><a href="#prerequite">Prasyarat Pendaftaran</a></li>
+          <li class="nav-item"><a href="#schedule">Jadwal Kompetisi</a></li>
+          <li class="nav-item"><a href="#faq">FAQ</a></li>
         </ul>
         <ul class="register">
           <li class="nav-register"><a href="#">Daftar Sekarang</a></li>

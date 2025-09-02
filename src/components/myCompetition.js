@@ -21,9 +21,9 @@ class MyCompetition extends HTMLElement {
         background:
         radial-gradient(circle at top left, var(--yellowColor), transparent 20%),
         white;
-        padding: 30px 45px;
+        padding: 70px 45px;
         display: grid;
-        gap: 30px 5px;
+        gap: 50px 5px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 0.3fr 0.4fr auto;
         grid-template-areas: 
@@ -50,10 +50,10 @@ class MyCompetition extends HTMLElement {
       grid-area: desc;
       display: flex;
       flex-flow: column;
-      gap: 10px;
+      gap: 15px;
       background: linear-gradient(to left, var(--greenColor), #00634cff);
       padding: 20px;
-      border-radius: 20px;
+      border-radius: 15px;
       color: white;
     }
 
@@ -68,7 +68,7 @@ class MyCompetition extends HTMLElement {
         padding: 0 20px;
         display: flex;
         flex-flow: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     .aside li:hover{
@@ -111,7 +111,7 @@ class MyCompetition extends HTMLElement {
       grid-template-areas:
       'h h'
       'bot-left bot-right';
-      gap: 20px;
+      gap: 30px;
     }
 
     .bottom-side h2{
@@ -145,7 +145,7 @@ class MyCompetition extends HTMLElement {
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 15px 20px;
+      padding: 8px 12px;
       border-radius: 50px;
       border: 1px solid rgba(231, 231, 231, 1);
     }

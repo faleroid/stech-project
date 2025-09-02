@@ -23,22 +23,29 @@ class MyCompetition extends HTMLElement {
         white;
         padding: 70px 45px;
         display: grid;
-        gap: 50px 5px;
+        gap: 20px 5px;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 0.3fr 0.4fr auto;
         grid-template-areas: 
+        '. logo logo .'
         'overview overview overview overview'
         'desc desc side side'
         'bot bot bot bot'
         ;
       }
 
-      p.overview{
+      .overview-container{
         grid-area: overview;
-        text-align: left;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+
+      p.overview{
+        text-align: center;
+        width: 60%;
         font-family: var(--fontPar);
         font-weight: normal;
-        font-size: 18px;
+        font-size: 14px;
       }
 
     .comp-desc h2 {
@@ -64,18 +71,18 @@ class MyCompetition extends HTMLElement {
     }
 
     .aside{
-        grid-area: side;
-        padding: 0 20px;
-        display: flex;
-        flex-flow: column;
-        gap: 20px;
+      grid-area: side;
+      padding: 0 20px;
+      display: flex;
+      flex-flow: column;
+      gap: 20px;
     }
 
     .aside li:hover{
-        background:
-        radial-gradient(circle at bottom left, var(--yellowColor), transparent 30%),
-        radial-gradient(circle at bottom right, var(--yellowColor), transparent 30%),
-        white;
+      background:
+      radial-gradient(circle at bottom left, var(--yellowColor), transparent 30%),
+      radial-gradient(circle at bottom right, var(--yellowColor), transparent 30%),
+      white;
     }
 
     h2{
@@ -115,6 +122,7 @@ class MyCompetition extends HTMLElement {
     }
 
     .bottom-side h2{
+      margin-top: 50px;
       grid-area: h;
       text-align: center;
     }
@@ -171,18 +179,48 @@ class MyCompetition extends HTMLElement {
       border-radius: 50px;
       background: linear-gradient(135deg, #5aedadff, #197863ff);
     }
+    
+    .logos{
+      grid-area: logo;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .hmif-logo{
+      padding-left: 10px;
+    }
+
+    .line-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .vertical-line{
+      border: 1px solid gray;
+      height: 60%;
+    }
   `;
   }
 
   render() {
     this.shadowRoot.innerHTML = `
       <div class="wrapper">
-        <p class="overview">
-          Melanjutkan kesuksesan program pelatihan sebelumnya (2021-2024) yang telah memberikan lebih dari 250.000 beasiswa belajar coding kepada talenta digital Indonesia di bidang Back-End dan DevOps, tahun ini Amazon Web Services (AWS) bersama Dicoding kembali mengadakan program AWS Back-End Academy yang akan memberikan pelatihan coding di bidang Back-End Developer JavaScript mulai dari level dasar hingga mahir*. Terdapat tambahan materi Artificial Intelligence (AI) untuk menggali lebih dalam layanan AI yang disediakan oleh AWS, mulai dari mempelajari konsep dasar AI, Machine Learning, hingga pemanfaatan Generative AI, seperti Partyrock dan Amazon Bedrock.
-        </p>
+        <div class="logos">
+          <img src="/assets/images/logo.png" width="60px">
+          <div class="line-container"><div class="vertical-line"></div></div>
+          <img class="hmif-logo" src="/assets/images/hmif-logo.png" width="60px">
+        </div>
+
+        <div class="overview-container">
+          <p class="overview">
+            Soedirman Technophoria kembali hadir sebagai wadah bagi para talenta digital muda di seluruh Indonesia. Kompetisi ini diselenggarakan setiap tahun oleh Himpunan Mahasiswa Informatika Universitas Jenderal Soedirman. S-Tech mempunyai visi untuk mendorong batas-batas inovasi para generasi muda. Melalui Soedirman Technophoria, setiap ide cemerlang berhak mendapatkan panggungnya dan setiap talenta berhak menemukan inspirasinya.
+          </p>
+        </div>
 
         <div class="comp-desc">
-          <h2>Apa itu S-Tech?</h2>
+          <h2>S-Tech 2025</h2>
           <p>
           Program beasiswa untuk meningkatkan kompetensi di bidang Back-End Development dari Amazon Web Services (AWS).
 

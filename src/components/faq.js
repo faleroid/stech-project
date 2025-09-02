@@ -13,7 +13,7 @@ class FaqSection extends HTMLElement {
         this._style.textContent = `
             .faq-wrapper {
                 background-color: var(--bg);
-                padding: 30px 70px;
+                padding: 50px 70px;
                 font-family: sans-serif;
                 }
             h2 {

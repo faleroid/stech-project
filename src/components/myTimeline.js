@@ -113,7 +113,6 @@ class MyTimeline extends HTMLElement{
                 justify-content: center;
                 align-items: center;
                 gap: 50px;
-                padding-bottom: 50px;
             }
 
             .regis-container{
@@ -168,8 +167,10 @@ class MyTimeline extends HTMLElement{
             }
 
             .dashed-line{
-                border: 1px dashed black;
+                border: 1px solid #121212ff;
                 width: 70%;
+                margin-top: 50px;
+                margin-bottom: 10px;
             }
         `;
     }
@@ -202,7 +203,7 @@ class MyTimeline extends HTMLElement{
                             <div class="regis-item">
                                 <div class="box">V</div>
                                 <div class="box-text">
-                                    <h3>Inputkan Data Tim</h3>
+                                    <h3>Inputkan data tim</h3>
                                     <p>Isi data tim dengan cermat untuk meminimalisir kesalahan data</p>
                                 </div>
                             </div>
@@ -210,7 +211,7 @@ class MyTimeline extends HTMLElement{
                             <div class="regis-item">
                                 <div class="box">V</div>
                                 <div class="box-text">
-                                    <h3>Kirim Data Kamu</h3>
+                                    <h3>Kirim formulir pendaftaran</h3>
                                     <p>Setelah semua data valid, kirim jawaban tersebut</p>
                                 </div>
                             </div>
@@ -273,6 +274,8 @@ class MyTimeline extends HTMLElement{
 
                     <p class="note"><span class="red-star">* </span>Catatan: Linimasa ini dapat berubah sewaktu-waktu. Jika ada perubahan, pemberitahuan akan diumumkan melalui media sosial dan website Soedirman Technophoria 2025.</p>
                 </div>
+
+                <span class="dashed-line"></span>
             </div>
         `;
 

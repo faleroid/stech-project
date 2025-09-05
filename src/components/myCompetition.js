@@ -222,8 +222,9 @@ class MyCompetition extends HTMLElement {
         width: 100%;
       }
 
-      .comp-desc h2, .aside h2{
-          font-size: 25px;
+      .comp-desc h2, .aside h2, .bottom-side h2{
+          font-size: 20px;
+          text-align: left;
       }
 
       .aside{
@@ -231,8 +232,8 @@ class MyCompetition extends HTMLElement {
         padding: 0;
       }
 
-      .aside li p{
-        font-size: 18px;
+      .aside p{
+        font-size: 16px;
         padding: 10px 0;
       }
 
@@ -247,6 +248,14 @@ class MyCompetition extends HTMLElement {
         'bot-left bot-left'
         'bot-right bot-right'
         ;    
+      }
+
+      .bottom-side p{
+        font-size: 14px;
+      }
+
+      .bottom-side div{
+        font-size: 16px;
       }
 
       .prereq{

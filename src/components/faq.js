@@ -77,6 +77,16 @@ class FaqSection extends HTMLElement {
             .faq-item.active .question{
                 color: var(--lightGreen);
             }
+
+            @media (max-width: 640px) {
+                .faq-wrapper{
+                    padding: 40px;
+                }
+
+                h2{
+                    font-size: 20px;
+                }
+            }
         `;
     }
 

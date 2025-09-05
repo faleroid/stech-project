@@ -89,6 +89,12 @@ class MediaSlider extends HTMLElement {
                 opacity: 1;
                 transform: scale(1.05);
             }
+
+             @media (max-width: 640px) {
+                h2{
+                    font-size: 20px;
+                }
+             }
         `;
     }
 

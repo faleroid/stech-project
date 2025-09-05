@@ -92,6 +92,15 @@ class MyRegistration extends HTMLElement {
                     width: 250px;
                 }
 
+                h3{
+                    font-size: 16px;
+                }
+
+                p{
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+
                 .regis-wrapper{
                     padding-top: 50px;
                     padding-bottom: 30px;

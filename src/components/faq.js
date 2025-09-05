@@ -85,6 +85,15 @@ class FaqSection extends HTMLElement {
 
                 h2{
                     font-size: 20px;
+                    text-align: center;
+                }
+
+                .faq-item.active button{
+                    margin-bottom: 15px;
+                }
+
+                .answer p{
+                    font-size: 14px;
                 }
             }
         `;

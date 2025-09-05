@@ -14,6 +14,8 @@ class MyTimeline extends HTMLElement {
             :host {
                 display: block;
                 background-color: var(--bg);
+                background:
+                radial-gradient(circle at left, var(--greenColor), transparent 10%);
             }
             
             h2, h3, p {
@@ -92,8 +94,18 @@ class MyTimeline extends HTMLElement {
             }
 
             @media (max-width: 640px) {
-                container{
-                background-color: red;
+                :host{
+                    background:
+                    none;
+                }
+
+                h3{
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-size: 12px;
                 }
 
                 .timeline-wrapper{

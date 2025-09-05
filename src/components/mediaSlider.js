@@ -34,8 +34,8 @@ class MediaSlider extends HTMLElement {
                 text-align: center;
                 font-weight: 500;
                 background:
-                radial-gradient(circle at top right, var(--greenColor), transparent 25%),
-                radial-gradient(circle at top left, var(--redColor), transparent 25%);
+                radial-gradient(circle at right, var(--greenColor), transparent 25%),
+                radial-gradient(circle at left, var(--redColor), transparent 25%);
             }
 
             .slider{

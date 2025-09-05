@@ -17,6 +17,7 @@ class MyHeading extends HTMLElement {
         }
 
         .wrapper{
+            
             min-height: 92vh;
             display: flex;
             gap: 20px;
@@ -73,6 +74,34 @@ class MyHeading extends HTMLElement {
             color: var(--fontColor);
             outline: none;
             border: none;
+        }
+
+        @media (max-width: 640px) {
+            .wrapper{
+                min-height: 100vh;
+                background-color: var(--bg);
+            }
+
+            img{
+                width: 150px;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 22px;
+            }
+
+            .year{
+                font-size: 18px;
+            }
+
+            .desc p{
+                font-size: 12px;
+            }
+
+            button{
+                font-size: 12px;
+            }
         }
         `;
   }

@@ -112,6 +112,7 @@ class MyCompetition extends HTMLElement {
     }
 
     .bottom-side{
+      margin-top: 50px;
       grid-area: bot;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -122,7 +123,6 @@ class MyCompetition extends HTMLElement {
     }
 
     .bottom-side h2{
-      margin-top: 50px;
       grid-area: h;
       text-align: center;
     }
@@ -200,6 +200,58 @@ class MyCompetition extends HTMLElement {
     .vertical-line{
       border: 1px solid gray;
       height: 60%;
+    }
+
+    @media (max-width: 640px) {
+      .wrapper{
+        grid-template-areas:
+        'logo logo logo logo'
+        'overview overview overview overview'
+        'desc desc desc desc'
+        'side side side side'
+        'bot bot bot bot'
+        ;
+      }
+
+      .overview-container{
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      
+      p.overview{
+        width: 100%;
+      }
+
+      .comp-desc h2, .aside h2{
+          font-size: 25px;
+      }
+
+      .aside{
+        margin-top: 15px;
+        padding: 0;
+      }
+
+      .aside li p{
+        font-size: 18px;
+        padding: 10px 0;
+      }
+
+      .comp-desc p{
+        font-size: 14px;
+      }
+
+      .bottom-side{
+        margin-top: 20px;
+        grid-template-areas: 
+        'h h'
+        'bot-left bot-left'
+        'bot-right bot-right'
+        ;    
+      }
+
+      .prereq{
+        gap: 15px;
+      }
     }
   `;
   }

@@ -85,6 +85,12 @@ class MyNavbar extends HTMLElement {
       .navbar-wrapper.scrolled ul {
         background-color: transparent;
       }
+
+    @media (max-width: 640px) {
+      :host {
+        display: none;
+    }
+}
     `;
   }
 

@@ -1,16 +1,16 @@
 class MyRegistration extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this._style = document.createElement('style');
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this._style = document.createElement('style');
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    updateStyle() {
-        this._style.textContent = `
+  updateStyle() {
+    this._style.textContent = `
             :host {
                 display: block;
                 background:
@@ -112,10 +112,10 @@ class MyRegistration extends HTMLElement {
 
             }
         `;
-    }
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
             <div class="regis-wrapper">
                 <h2>Tahapan Registrasi</h2>
                
@@ -166,9 +166,9 @@ class MyRegistration extends HTMLElement {
             </div>
         `;
 
-        this.updateStyle();
-        this.shadowRoot.append(this._style);
-    }
+    this.updateStyle();
+    this.shadowRoot.append(this._style);
+  }
 }
 
 customElements.define('my-regis', MyRegistration);

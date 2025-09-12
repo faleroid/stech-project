@@ -1,16 +1,16 @@
 class MyTimeline extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this._style = document.createElement('style');
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this._style = document.createElement('style');
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    updateStyle() {
-        this._style.textContent = `
+  updateStyle() {
+    this._style.textContent = `
             :host {
                 display: block;
                 background-color: var(--bg);
@@ -127,10 +127,10 @@ class MyTimeline extends HTMLElement {
                 }
             }
         `;
-    }
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
             <div class="timeline">
                 <h2>Linimasa Kompetisi</h2>
                 <div class="timeline-wrapper">
@@ -167,9 +167,9 @@ class MyTimeline extends HTMLElement {
             </div>
         `;
 
-        this.updateStyle();
-        this.shadowRoot.append(this._style);
-    }
+    this.updateStyle();
+    this.shadowRoot.append(this._style);
+  }
 }
 
 customElements.define('my-timeline', MyTimeline);

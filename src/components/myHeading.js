@@ -28,6 +28,7 @@ class MyHeading extends HTMLElement {
 
         h1{
             font-family: var(--fontHeading);
+            text-align: center;
             font-weight: 600;
             font-size: 3rem;
             color: var(--fontColor);
@@ -87,7 +88,6 @@ class MyHeading extends HTMLElement {
             }
 
             h1{
-                text-align: center;
                 font-size: 22px;
             }
 

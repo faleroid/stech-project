@@ -1,16 +1,16 @@
 class FaqSection extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this._style = document.createElement('style');
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this._style = document.createElement('style');
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    updateStyle() {
-        this._style.textContent = `
+  updateStyle() {
+    this._style.textContent = `
             .faq-wrapper {
                 background-color: var(--bg);
                 padding: 50px 70px;
@@ -97,10 +97,10 @@ class FaqSection extends HTMLElement {
                 }
             }
         `;
-    }
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
             <div class="faq-wrapper">
                 <h2>Frequently Asked Questions</h2>
                 
@@ -137,29 +137,29 @@ class FaqSection extends HTMLElement {
             </div>
         `;
 
-        this.updateStyle();
-        this.shadowRoot.appendChild(this._style);
-        
-        const allFaqItems = this.shadowRoot.querySelectorAll('.faq-item');
-        allFaqItems.forEach(item => {
-            const questionButton = item.querySelector('.question');
-            const answerPanel = item.querySelector('.answer');
+    this.updateStyle();
+    this.shadowRoot.appendChild(this._style);
 
-            questionButton.addEventListener('click', () => {
-                const wasActive = item.classList.contains('active');
+    const allFaqItems = this.shadowRoot.querySelectorAll('.faq-item');
+    allFaqItems.forEach((item) => {
+      const questionButton = item.querySelector('.question');
+      const answerPanel = item.querySelector('.answer');
 
-                allFaqItems.forEach(i => {
-                    i.classList.remove('active');
-                    i.querySelector('.answer').style.maxHeight = null;
-                });
+      questionButton.addEventListener('click', () => {
+        const wasActive = item.classList.contains('active');
 
-                if (!wasActive) {
-                    item.classList.add('active');
-                    answerPanel.style.maxHeight = answerPanel.scrollHeight + 'px';
-                }
-            });
+        allFaqItems.forEach((i) => {
+          i.classList.remove('active');
+          i.querySelector('.answer').style.maxHeight = null;
         });
-    }
+
+        if (!wasActive) {
+          item.classList.add('active');
+          answerPanel.style.maxHeight = answerPanel.scrollHeight + 'px';
+        }
+      });
+    });
+  }
 }
 
 customElements.define('faq-section', FaqSection);

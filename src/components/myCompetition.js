@@ -198,7 +198,7 @@ class MyCompetition extends HTMLElement {
     }
 
     .vertical-line{
-      border: 1px solid gray;
+      border: 0.1px solid gray;
       height: 60%;
     }
 

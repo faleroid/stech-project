@@ -1,16 +1,16 @@
 class MediaSlider extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' });
-        this._style = document.createElement('style');
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this._style = document.createElement('style');
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    updateStyle() {
-        this._style.textContent = `
+  updateStyle() {
+    this._style.textContent = `
             :host {
                 display: block;
                 width: 100%;
@@ -96,10 +96,10 @@ class MediaSlider extends HTMLElement {
                 }
              }
         `;
-    }
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
         <div class="slider">
             <div class="slider-wrapper">
                 <h2>Dokumentasi S-Tech 2024</h2>
@@ -115,9 +115,9 @@ class MediaSlider extends HTMLElement {
         </div>
         `;
 
-        this.updateStyle();
-        this.shadowRoot.appendChild(this._style);
-    }
+    this.updateStyle();
+    this.shadowRoot.appendChild(this._style);
+  }
 }
 
 customElements.define('media-slider', MediaSlider);

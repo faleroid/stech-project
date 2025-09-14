@@ -78,7 +78,7 @@ class MyNavbar extends HTMLElement {
         background-color: rgba(25, 25, 25, 0.6);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        padding: 10px 0;
+        padding: 15px 0;
         border-bottom: 1px solid rgba(152, 150, 150, 0.1);
       }
 
@@ -100,7 +100,6 @@ class MyNavbar extends HTMLElement {
         <ul>
           <li class="nav-item"><a href="#about">Tentang Kompetisi</a></li>
           <li class="nav-item"><a href="#theme">Tema Besar</a></li>
-          <li class="nav-item"><a href="#prerequite">Prasyarat Pendaftaran</a></li>
           <li class="nav-item"><a href="#schedule">Jadwal Kompetisi</a></li>
           <li class="nav-item"><a href="#faq">FAQ</a></li>
         </ul>

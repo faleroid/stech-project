@@ -5,3 +5,4 @@ import '../components/myRegis.js';
 import '../components/myTimeline.js';
 import '../components/faq.js';
 import '../components/mediaSlider.js';
+import '../components/videoPlayer.js';
